@@ -41,7 +41,7 @@ class Servico(models.Model):
     def __str__(self):
         current_elo_name = self.current_elo.nome if isinstance(self.current_elo, Elo) else self.current_elo
         target_elo_name = self.target_elo.nome if isinstance(self.target_elo, Elo) else self.target_elo
-        username = self.user.username if self.user else "N/A"  # Se não houver usuário, exiba "N/A"
+        email = self.user.email if self.user else "N/A"  # Se não houver usuário, exiba "N/A"
 
         return (
             f"{current_elo_name} ao {target_elo_name} - {self.user.email} - {self.status} - prazo de {self.time} dias"
