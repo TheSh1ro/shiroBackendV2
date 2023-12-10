@@ -6,6 +6,7 @@ from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.utils.translation import gettext_lazy as _
 
 from core import models
+from core.models import User, Servico, Fila, Modalidade, Elo, Status
 
 
 class UserAdmin(BaseUserAdmin):
@@ -48,4 +49,9 @@ class UserAdmin(BaseUserAdmin):
     )
 
 
-admin.site.register(models.User, UserAdmin)
+admin.site.register(User, UserAdmin)
+admin.site.register(Servico)
+admin.site.register(Fila)
+admin.site.register(Modalidade)
+admin.site.register(Elo)
+admin.site.register(Status)
