@@ -17,6 +17,7 @@ from core.views import (
     StatusViewSet,
     UserViewSet,
     get_user_details,
+    RegistrationViewSet,
 )
 
 # Define os roteadores
@@ -27,6 +28,8 @@ router.register(r"servico", ServicoViewSet)
 router.register(r"elo", EloViewSet)
 router.register(r"status", StatusViewSet)
 router.register("users", UserViewSet, basename="users")
+router.register(r"registration", RegistrationViewSet, basename="registration")
+
 
 urlpatterns = [
     # Endpoints do core

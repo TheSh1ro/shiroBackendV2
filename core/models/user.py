@@ -1,3 +1,4 @@
+# core\models\user.py
 """
 Database models.
 """

@@ -1,4 +1,4 @@
-from .user import UserViewSet
+from .user import UserViewSet, RegistrationViewSet
 from .user_info import get_user_details
 from .elo import EloViewSet, EloDetail, EloList
 from .fila import FilaViewSet, FilaDetail, FilaList
